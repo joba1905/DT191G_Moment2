@@ -147,6 +147,19 @@ footer {
     text-align: center;
 }
 
+@media (max-width: 1000px) {
+    form,
+    form [type=text],
+    form [type=url],
+    textarea {
+        width: 80%;
+    }
+
+    .genre {
+        width: 80%;
+    }
+}
+
 @media (max-width: 750px) {
     main {
         flex-direction: column;
@@ -158,6 +171,13 @@ footer {
 
     .right {
         margin-left: 0;
+    }
+
+    form [type=text],
+    form [type=url],
+    textarea,
+    .genre {
+        width: 100%;
     }
 }
 
