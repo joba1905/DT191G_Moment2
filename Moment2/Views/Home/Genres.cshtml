@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Genres";
+}
+
+<div class="single">
+    <h2 class="page-top">Genres of metal</h2>
+
+    @foreach (var genre in ViewBag.Genres)
+    {
+        <div class="genre">
+            <h2>@genre</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tristique turpis lorem, eu dictum neque tristique vel. Sed a neque vel purus sagittis blandit. Morbi molestie volutpat nunc egestas sodales. Nam in mi aliquam diam luctus dignissim id quis neque. Proin porta faucibus augue in dictum. Nulla lobortis euismod risus quis pharetra. Proin nec congue libero. Donec tortor ipsum, rhoncus non tortor ultricies, porta pretium eros. Nulla accumsan rhoncus mollis. Integer quis commodo dolor, id ultricies diam.
+            </p>
+        </div>
+    }
+
+</div>

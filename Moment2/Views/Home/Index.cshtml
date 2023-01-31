@@ -1,0 +1,37 @@
+﻿@model List<Moment2.Models.Bands>
+@{
+    ViewData["Title"] = "Bands";
+}
+
+<div class="left">
+    <h2>Official links</h2>
+
+    <ul class="latest">
+        @foreach (var band in Model)
+        {
+            <li>
+                <a href="@band.Url" target="_blank">|| @band.Name (@band.Country) ||</a>
+            </li>
+        }
+    </ul>
+</div>
+
+<div class="right">
+    <h2 class="page-top">All bands</h2>
+
+    @foreach (var band in Model)
+    {
+        <article>
+            <h2>@band.Name</h2>
+            <h3>@band.Genre</h3>
+            <b>Formed in:</b> @band.Country, @band.Year
+            <br>
+            <br>
+            @band.Description
+            <br>
+            <br>
+            <a href="@band.Url" target="_blank">[Source]</a>
+        </article>
+    }
+
+</div>

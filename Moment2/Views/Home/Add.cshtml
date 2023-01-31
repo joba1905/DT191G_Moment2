@@ -1,0 +1,52 @@
+﻿@model Moment2.Models.Bands
+@{
+    ViewData["Title"] = "Add new band";
+}
+
+<div class="single">
+    <h2 class="page-top">Add a band</h2>
+
+    <form method="post">
+        <label asp-for="Name"></label>
+        <br />
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+        <br />
+        <br />
+
+        <label asp-for="Country"></label>
+        <br />
+        <input asp-for="Country"/>
+        <span asp-validation-for="Country"></span>
+        <br />
+        <br />
+
+        <label asp-for="Genre"></label>
+        <br />
+        <input asp-for="Genre" />
+        <span asp-validation-for="Genre"></span>
+        <br />
+        <br />
+
+        <label asp-for="Year"></label>
+        <br />
+        <input asp-for="Year" />
+        <span asp-validation-for="Year"></span>
+        <br />
+        <br />
+
+        <label asp-for="Url"></label>
+        <br />
+        <input asp-for="Url" />
+        <br />
+        <br />
+
+        <label asp-for="Description"></label>
+        <br />
+        <textarea asp-for="Description"></textarea>
+        <br />
+        <br />
+
+        <input type="submit" value="Save band" />
+    </form>
+</div>
